@@ -49,12 +49,21 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Row( 
           mainAxisAlignment: MainAxisAlignment.spaceAround, 
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+            Text(
+              'CounterClick',
+              style: TextStyle(
+                color: Color.fromRGBO(60, 151, 210, 1),
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+              style: TextStyle(
+                color: Color.fromRGBO(60, 151, 210, 1),
+                fontSize: 30,
+                fontWeight: FontWeight.bold, 
+              ),
             ),
           ],
         ),
