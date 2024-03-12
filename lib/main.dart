@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Row( 
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceAround, 
           children: <Widget>[
             const Text(
               'You have pushed the button this many times:',
