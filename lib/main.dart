@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         backgroundColor: const Color(0xFFEE8020),
         child: const Icon(
-          Icons.add,
+          Icons.accessibility_new_rounded,
           color: Color.fromRGBO(136, 194, 64, 1),
         ),
       ),
