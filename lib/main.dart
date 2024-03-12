@@ -42,14 +42,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFFEE8020),
+        backgroundColor: const Color(0xFFEE8020),
         title: Text(widget.title),
       ),
       body: Center(
-        child: Row( 
-          mainAxisAlignment: MainAxisAlignment.spaceAround, 
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            Text(
+            const Text(
               'CounterClick',
               style: TextStyle(
                 color: Color.fromRGBO(60, 151, 210, 1),
@@ -59,10 +59,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: TextStyle(
+              style: const TextStyle(
                 color: Color.fromRGBO(60, 151, 210, 1),
                 fontSize: 30,
-                fontWeight: FontWeight.bold, 
+                fontWeight: FontWeight.bold,
               ),
             ),
           ],
@@ -71,7 +71,11 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        backgroundColor: const Color(0xFFEE8020),
+        child: const Icon(
+          Icons.add,
+          color: Color.fromRGBO(136, 194, 64, 1),
+        ),
       ),
     );
   }
